@@ -1,6 +1,6 @@
 HTML & CSS
 
-![Alt text](image.png)
+![image](https://github.com/Pallaveechaubey/HTML-CSS-Docu/assets/159125105/397ddb6f-4bb8-4e85-83ec-9100a111b85c)
 
 
 Submitted by - Pallavee Chaubey

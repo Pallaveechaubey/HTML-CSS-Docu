@@ -1,47 +1,30 @@
-HTML & CSS
+
+<div style='text-align: center;'>
+  <h1>HTML & CSS</h1>
+</div>  
 
 ![image](https://github.com/Pallaveechaubey/HTML-CSS-Docu/assets/159125105/397ddb6f-4bb8-4e85-83ec-9100a111b85c)
 
-
-Submitted by - Pallavee Chaubey
-Table of Content
-Hypertext Mark-up Language	3
-Structure of HTML	3
-Anatomy of HTML document	5
-HTML Text fundamentals	6
-Heading 2	8
-Heading 3	8
-Heading 4	8
-Heading 5	8
-Heading 6	8
-Why  do we need structure ?	9
-Adding supporting information with title attribute	13
-Document and Web Structure	13
-Quotation	14
-Normal Text	15
-Blockquote	15
-Normal Text	16
-Inlinequotes	17
-Cascading Style sheet	19
-There are 3 ways to connect CSS  in our document	19
-Importance of CSS Priority in the file	20
-CSS Order of Priority	20
-Selectors in CSS	21
-Introduction to Google Fonts	25
-What is Box Model	26
-Flex	28
-Grid	32
-Properties associated with grid items	32
-Benefits of grid :	33
-Reference	33
+<div style='text-align: right;'>
+  <h2>Submitted by - Pallavee Chaubey</h2>
+</div>
 
 
-
-
-
-
-
-
+## Table of Content  
+[Hypertext Mark-up Language](#hypertext-mark-up-language)  
+[Structure of HTML](#structure-of-html)	   
+[Anatomy of HTML document](#anatomy-of-html-document)	  
+[HTML Text fundamentals](#html-text-fundamentals)	    	    
+[Document and Web Structure](#document-and-web-structure)	    
+[Blockquote](#blockquote)	    	  
+[Cascading Style sheet](#cascading-style-sheet)	      
+[CSS Order of Priority](#css-order-of-priority)	  
+[Selectors in CSS](#selectors-in-css)	  
+[Introduction to Google Fonts](#introduction-to-google-fonts)	  
+[What is Box Model](#what-is-box-model)	  
+[Flex](#flex)	  
+[Grid](#grid)	  	  
+[Reference](#reference)	 
 
 
 
@@ -49,7 +32,7 @@ Reference	33
 
 “Hypertext” means links that connect web pages to one another, either within a single website or between websites. Whereas “Markup” means any text, images, and other content for display in a web browser.
 
-Structure of HTML
+## Structure of HTML
 ```
 <!DOCTYPE html>
 <html>
@@ -63,27 +46,27 @@ Structure of HTML
 </html>
 ```
 
-Before delving into the HTML structure, let's clarify a few important words.
+Before delving into the HTML structure, let's clarify a few important words.  
 
-Open tag : Open tag consists of the name of an element wrapped in opening < and closing > angle brackets. 
-Content : Content sandwich in opening and closing tag.
+Open tag : Open tag consists of the name of an element wrapped in opening < and closing > angle brackets.  
+Content : Content sandwich in opening and closing tag.  
 Closing tag : Same as Open tag but having a forward slash / before name of element.
 
 Example 
 ```<p>My name is Pallavee.</p>```
 Here, ```<p>``` is the opening tag p is the name of the element i.e used for paragraphs will be discussed further. My name is pallavee and it is content and ```</p>``` is the closing tag.
 
-## Element
+## Element  
 The element is an opening tag followed by content followed by a closing tag.
 
 ### Nesting Element
 Elements placed within other elements are called Nesting elements.
 
-**Example**
+**Example**  
 ```<p>```My name is ```<strong>```Pallavee```<strong>```
 We will discuss later about the ```<p>``` tag and ```<strong>``` tag.
 
-### Void Element
+### Void Element  
 Not all elements follow the pattern of opening, content and closing tag.
 Some elements consist of a single tag which is typically used to insert/embed in the document.
 We may or may not use slash (/) at the end.
@@ -135,12 +118,9 @@ It is referred to as root elements; all other elements must be descendants of th
 The head of an HTML document is the part that is not displayed in the web browser when the page is loaded.
 Web browsers use information contained in the head to render the HTML document correctly. 
 Head contains the metadata about the page.  
+ 
 
-<meta charset="UTF-8">
-   <title>Document</title>
-    <meta/>```  
-
-Metadata is data that describes data, and HTML has an "official" way of adding metadata to a document — the <meta> element.
+Metadata is data that describes data, and HTML has an "official" way of adding metadata to a document — the ```<meta>``` element.
 
 Example  
 ```<meta charset="utf-8" />```
@@ -152,7 +132,7 @@ Contain the content that displays on the webpage.
 ### HTML Text fundamentals
 Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.
 
-Heading
+## Heading
 In HTML there are 6 heading elements h1,h2,h3,h4,h5,h6 .Each element represents a different level of content in the document; ``` <h1> ``` represents the main heading, ```<h2>``` represents subheadings, ``` <h3> ``` represents sub-subheadings, and so on.
 Preferably, you should use a single ``` <h1> ```per page—this is the top level heading, and all others sit below this in the hierarchy.
 Make sure you use the headings in the correct order in the hierarchy. Don't use ``` <h3> ``` elements to represent subheadings, followed by ``` <h2> ``` elements to represent sub-subheadings—that doesn't make sense and will lead to weird results.
@@ -164,7 +144,6 @@ Of the six heading levels available, you should aim to use no more than three pe
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
    <h1>Heading 1</h1>
@@ -184,7 +163,6 @@ Of the six heading levels available, you should aim to use no more than three pe
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
    <h1>Heading 1</h1>
@@ -197,7 +175,7 @@ Of the six heading levels available, you should aim to use no more than three pe
 </html>
 
 ## Paragraph
-In HTML, each paragraph has to be wrapped in a <p> element.
+In HTML, each paragraph has to be wrapped in a ```<p>``` element.
 
 Example  
 ```
@@ -205,7 +183,6 @@ Example
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
    <h1>Heading 1</h1>
@@ -221,16 +198,18 @@ Example
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
    <h4>Heading 1</h4>
    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Tempora cumque perferendis qui.</p>
+       Tempora cumque perferendis qui.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+       Tempora cumque perferendis qui.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+       Tempora cumque perferendis qui.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+       Tempora cumque perferendis qui</p>
 </body>
 </html>
 
-### Why  do we need structure ?
+### Why  do we need structure
 * This is because there are no elements to give the content structure, so the browser does not know what is a heading and what is a paragraph.
 
 * If you want your web page to show up well on search engines like Google, it's important to use headings on your page. Search engines see headings as important words, and without them, your page might not do well in search results. Headings help improve your page's SEO, making it more likely to be found by people searching for related topics.  
@@ -248,8 +227,8 @@ In short, semantic HTML means picking HTML tags that truly say what's inside, ma
 ## List
 In HTML, there are two types of lists: ordered lists and unordered lists.
 ### 1. Ordered list
-Ordered lists are lists in which the order of the items does matter. 
-Every ordered list begins with a `“<ol>”` element, which encloses all the list items.
+Ordered lists are lists in which the order of the items does matter.  
+Every ordered list begins with a `“<ol>”` element, which encloses all the list items.  
 Each list item is enclosed or wrapped in an ```“<li>” ```element.
 
 
@@ -259,7 +238,6 @@ If  we create a roadmap for a developer, and order is important
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
    <ol>
@@ -279,7 +257,6 @@ If  we create a roadmap for a developer, and order is important
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
    <ol>
@@ -296,14 +273,13 @@ If  we create a roadmap for a developer, and order is important
 Unordered lists are used to mark up lists of items for which the order of the items doesn't matter.
 Every ordered list begins with a ```“<ul>”``` element, which encloses all the list items.
 Each list item is enclosed or wrapped in an ```“<li>”``` element.
-Example
+Example  
 If you create a shopping list where order is not important.
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
    <ul>
@@ -323,7 +299,6 @@ If you create a shopping list where order is not important.
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
    <ul>
@@ -336,9 +311,9 @@ If you create a shopping list where order is not important.
 </body>
 </html>
 
-## Emphasis and Importance
+## Emphasis and Importance  
 In human language, we often emphasise certain words to alter the meaning of a sentence, and we often want to mark certain words as important or different in some way. HTML provides various semantic elements to allow us to mark up textual content with such effects, and in this section, we'll look at a few of the most common ones.  
-### Emphasis
+### Emphasis  
 When we want to emphasise something in speech, we stress specific words, subtly changing the meaning of our message. Similarly, in writing, we often emphasise words by putting them in italics.  
 
 Example  
@@ -350,7 +325,7 @@ Example
    <title>Document</title>
 </head>
 <body>
-    I am <b>glad</b> you weren't <i>late</i>.
+    I am <em>glad</em> you weren't <em>late</em>.
  
 </body>
 </html>  
@@ -363,7 +338,7 @@ Example
    <title>Document</title>
 </head>
 <body>
-    I am <b>glad</b> you weren't <i>late</i>.
+    I am <em>glad</em> you weren't <em>late</em>.
  
 </body>
 </html>  
@@ -371,10 +346,10 @@ Example
 The first sentence sounds truly relieved that the person wasn't late. On the other hand, the second one, with both the words "glad" and "late" in italics, sounds sarcastic or indirectly expressing annoyance that the person arrived a bit late.
 
 
-In HTML, we use the ```“<em>”```(emphasis) element to mark such instances. This not only makes the document more engaging to read but is also acknowledged by screen readers. Screen readers can be set up to speak these emphasised parts in a different tone of voice.
+In HTML, we use the ```<em>```(emphasis) element to mark such instances. This not only makes the document more engaging to read but is also acknowledged by screen readers. Screen readers can be set up to speak these emphasised parts in a different tone of voice.
 
 
-### Strong Importance
+## Strong Importance
 To highlight important words, we typically emphasise them when speaking and make them bold in written language.  
 
 Example  
@@ -411,15 +386,15 @@ Example
    <title>Document</title>
 </head>
 <body>
-<a herf=”https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks”>
-       Click on me</a>  
+<a herf=”https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks”>Click on me</a>  
+</br>
 </body>
-</html>  
+</html>    
 
 Adding supporting information with title attribute
 You might also want to include another thing with your links, called a "title." The title gives extra information about the link, like the type of information on the linked page or important things to know about the website. This makes it so that when you hover over the link, the title shows up as a tooltip.
 
-## Document and Web Structure
+# Document and Web Structure
 Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:
 **Header**:
   - A big strip at the top with a large heading, logo, and maybe a tagline. Stays the same on different webpages.
@@ -434,13 +409,11 @@ Webpages can and will look pretty different from one another, but they all tend 
   - Extra info, links, quotes, ads, etc. Often related to the main content (e.g., on a news article page, it might have the author's bio or links to related articles). Sometimes, recurring elements or a secondary navigation system are present.
 
 
-
-
 **Footer:**
   - A strip at the bottom of the page with fine print, copyright notices, or contact info. Similar to the header, it holds common information, but it's usually less critical. It's also used for SEO by providing quick links to popular content.
 
 **Quotation**
-The element you use depends on whether you are marking up a block or inline quotation.
+- The element you use depends on whether you are marking up a block or inline quotation.
 Blockquotes  
 
 If you have block-level content, like a paragraph, multiple paragraphs, or a list, that comes from somewhere else, you should put it inside a ```<blockquote>``` element. This helps show that the content is a quote. Additionally, you can include a web link to the source of the quote using the cite attribute.  
@@ -451,12 +424,11 @@ Browser default styling will render this as an indented paragraph, as an indicat
 <html>
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
-   <h1>Normal Text</h1>
+   <h4>Normal Text</h4>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae rerum eum iusto repudiandae, ratione ad error perspiciatis corporis reprehenderit quibusdam. Ratione autem eum odit inventore vel soluta eos laboriosam quibusdam, dolor eveniet!</p>
-  <h2>Blockquote</h2>
+  <h4>Blockquote</h4>
    <blockquote cite="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting">
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores in ducimus deleniti, vitae explicabo quas, minus, voluptatum ipsum perspiciatis cumque a quisquam aliquid ratione quis quam neque repellendus? Ea ut veniam quae cupiditate.</p></blockquote>
 </body>
@@ -468,12 +440,11 @@ Output
 <html>
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
-   <h1>Normal Text</h1>
+   <h4>Normal Text</h4>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae rerum eum iusto repudiandae, ratione ad error perspiciatis corporis reprehenderit quibusdam. Ratione autem eum odit inventore vel soluta eos laboriosam quibusdam, dolor eveniet!</p>
-  <h2>Blockquote</h2>
+  <h4>Blockquote</h4>
    <blockquote cite="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting">
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores in ducimus deleniti, vitae explicabo quas, minus, voluptatum ipsum perspiciatis cumque a quisquam aliquid ratione quis quam neque repellendus? Ea ut veniam quae cupiditate.</p></blockquote>
 </body>
@@ -487,12 +458,11 @@ Browser default styling will render this as normal text put in quotes .
 <html>
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
-   <h1>Normal Text</h1>
+   <h4>Normal Text</h4>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae rerum eum iusto repudiandae, ratione ad error perspiciatis corporis reprehenderit quibusdam. Ratione autem eum odit inventore vel soluta eos laboriosam quibusdam, dolor eveniet!</p>
-  <h2>Inlinequotes</h2>
+  <h4>Inlinequotes</h4>
   <q cite="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting">
    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis velit voluptatem nostrum laboriosam cumque veniam molestias? Officia suscipit maxime eligendi earum commodi inventore error, harum, adipisci fugiat eos, consectetur explicabo est aperiam architecto?
   </q>
@@ -507,9 +477,9 @@ Browser default styling will render this as normal text put in quotes .
    <title>Document</title>
 </head>
 <body>
-   <h1>Normal Text</h1>
+   <h4>Normal Text</h4>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae rerum eum iusto repudiandae, ratione ad error perspiciatis corporis reprehenderit quibusdam. Ratione autem eum odit inventore vel soluta eos laboriosam quibusdam, dolor eveniet!</p>
-  <h2>Inlinequotes</h2>
+  <h4>Inlinequotes</h4>
   <q cite="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting">
    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis velit voluptatem nostrum laboriosam cumque veniam molestias? Officia suscipit maxime eligendi earum commodi inventore error, harum, adipisci fugiat eos, consectetur explicabo est aperiam architecto?
   </q>
@@ -525,7 +495,7 @@ When introducing an abbreviation for the first time, include the full expansion 
 Wrap the abbreviation with the ``` <abbr> ``` tags to mark it up.
 This practice informs all users of the abbreviation's meaning and provides a hint to user agents on displaying or announcing the content.
 Marking up contact details
-HTML has a specific element for formatting contact details, and it's called <address>. You use this element to enclose your contact information.
+HTML has a specific element for formatting contact details, and it's called ```<address>```. You use this element to enclose your contact information.
 
 
 ``` 
@@ -550,7 +520,6 @@ HTML has a specific element for formatting contact details, and it's called <add
 <html>
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
 </head>
 <body>
    <address>
@@ -562,10 +531,11 @@ HTML has a specific element for formatting contact details, and it's called <add
 </html> 
 
 ### Superscript and Subscript
-Sometimes, when you're marking up things like dates, chemical formulas, or mathematical equations in HTML, you might need to use superscript and subscript to ensure they have the correct meaning. To do this, you use the ```<sup>``` element for superscript and the ```<sub>``` element for subscript.
+Sometimes, when you're marking up things like dates, chemical formulas, or mathematical equations in HTML, you might need to use superscript and subscript to ensure they have the correct meaning. To do this, you use the ```<sup>``` element for superscript and the ```<sub>``` element for subscript.  
 
 
-### Cascading Style sheet
+
+# Cascading Style sheet
 
 There are 3 ways to connect CSS  in our document  
 * Internal CSS
@@ -616,12 +586,12 @@ those styles. This helps to keep your styles organised and maintainable.
 
 ## Selectors in CSS
 CSS selectors are used to choose HTML elements for styling purposes.They constitute a fundamental aspect of CSS manipulation. In essence, selectors serve as patterns to designate elements to which styles are applied.
-CSS selectors can target elements based on their:
-Type
-  Class
-  ID
-  Attributes
-  Dynamic state or position
+CSS selectors can target elements based on their:  
+  Type  
+  Class  
+  ID  
+  Attributes  
+  Dynamic state or position  
 
 
 
@@ -646,8 +616,8 @@ A simple selector is either a type selector or a universal selector. Simple sele
 5. Selector list.
 
 ## Universal Selector
-The universal selector(*) applies the same styles to every element on the
-Page.
+The universal selector(```*```) applies the same styles to every element on the
+Page.  
 Asterisk (*): symbol denotes the universal selector in CSS.
 
 ## Element Selector
@@ -709,9 +679,8 @@ The + combinator selects adjacent element siblings.It will select only the eleme
 The CSS general sibling selector is used to select all elements that follow the first element such that all are children of the same parent.
 
 ## Attribute selectors
-
-###  The [attribute="value"] selector
- is used to select elements with a specified attribute and value.
+### [attribute="value"]  selector
+The *[attribute="value"]*  selector is used to select elements with a specified attribute and value.
 
 ### [attribute~="value"] Selector
 The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.
@@ -759,19 +728,18 @@ Step 2: Select the fonts and customise the styles.
 Step 3: Generate the code for adding the fonts to your project.
 Step 4: Use the fonts in your CSS.
 
-## What is Box Model
-The term "box model" is used when discussing a web application's  design and layout.
-● It is a box that wraps around every HTML element.
+## What is Box Model  
+The term "box model" is used when discussing a web application's  design and layout.  
+● It is a box that wraps around every HTML element.  
 ● It consists of: margins, borders, padding, and the actual content.
 
 ## Margin
 When no defined borders surround an element, a space is created using the CSS
 margin attributes.
 
-● You have complete control over the margins through CSS. Each side of an element can have its margin set using attributes (top, right, bottom, and left)
-.
+● You have complete control over the margins through CSS. Each side of an element can have its margin set using attributes (top, right, bottom, and left)  
 ● You have complete control over the margins through CSS. Each side of an
-element can have its margin set using attributes (top, right, bottom, and left).
+element can have its margin set using attributes (top, right, bottom, and left).  
 
 ● CSS has properties for specifying the margin for each side of an element:
 
@@ -780,34 +748,34 @@ element can have its margin set using attributes (top, right, bottom, and left).
 3. margin-bottom
 4. margin-left
 
-Eg.
-margin-top: 100px;
-margin-bottom: 100px;
-margin-right: 150px;
-margin-left: 80px;
+Eg.  
+margin-top: 100px;  
+margin-bottom: 100px;  
+margin-right: 150px;  
+margin-left: 80px;  
 
 ## Margins
-Margin properties can have the following values:
+### Margin properties can have the following values:
  
-● auto - when the browser calculates the margin
-● length - specifies a margin in terms of px, pt, cm, etc.
-● % - specifies a margin in % of the width of the containing element
-● inherit - specifies that margin would be inherited from the parent element
+● auto - when the browser calculates the margin  
+● length - specifies a margin in terms of px, pt, cm, etc.  
+● % - specifies a margin in % of the width of the containing element  
+● inherit - specifies that margin would be inherited from the parent element  
 
 #### Note: Negative values are also allowed.
-Margin - Shorthand Property :
+Margin - Shorthand Property :  
 it is acceptable to specify all the margin properties in one go. You may specify all or
 less (eg. only two margin property etc)
 
-Eg. 
+Eg.   
 ```margin: 75px 100px; ```
 Here, top and bottom margins would be 75px and right and left margin would be 100px
 Padding
 All the padding properties can have the following values:
 
-● length - specifies a padding in px, pt, cm, etc.
-● % - specifies a padding in % of the width of the containing element
-● inherit - specifies that the padding should be inherited from the parent element
+● length - specifies a padding in px, pt, cm, etc.  
+● % - specifies a padding in % of the width of the containing element  
+● inherit - specifies that the padding should be inherited from the parent element  
 
 ### Note: Negative values are not allowed.
 Eg.
@@ -820,19 +788,18 @@ padding-left: 80px;
 }
 ```
 ### Padding - Shorthand Property 
-To shorten the code, it is possible to specify all the padding properties in one property.
- If the padding property has four values then it may be specified as:
+To shorten the code, it is possible to specify all the padding properties in one property.  
+If the padding property has four values then it may be specified as:
 padding: 25px 50px 75px 100px; and the values are clearly assigned.
- But, padding can have lesser values as well, it purely depends on how many you wish to specify/as per requirement.
-
+ But, padding can have lesser values as well, it purely depends on how many you wish to specify/as per requirement.  
 If the padding property has three values:
 
-padding: 25px 50px 75px;
- top padding is 25px
- right and left paddings are 50px
-bottom padding is 75px
+padding: 25px 50px 75px;  
+top padding is 25px  
+right and left paddings are 50px  
+bottom padding is 75px  
 
-### Flex
+## Flex
 The Flexible Box Layout Module, which is popularly known as Flexbox, is a powerful way of designing the efficient and responsive layout in CSS.
 
 ### Some fundamental terminologies of Flexbox
@@ -848,38 +815,37 @@ and control over the layout design. It also allows us to put our elements in a r
 column within our layout.
 One can easily distribute the space between elements within a flex container.
 
-Different flexbox property
+### Different flexbox property
 Flexbox offers a variety of properties to create layout efficiently. Generally we can
-           categorise the flexbox properties into two parts-
+categorise the flexbox properties into two parts-
 1. Flex Container Properties
 2. Flex Items Properties
 
 ### Flex Container Property
 These are the properties that are used over the flex container (parent container).
-Flex container properties are as follows-
-a. Display
-b. flex-direction
-c. flex-wrap
-d. flex-flow
-e. justify-content
-f. align-items
-g. align-content
-h. gap
-    i. row-gap
-    ii. Column-gap
+Flex container properties are as follows-  
+a. Display  
+b. flex-direction  
+c. flex-wrap  
+d. flex-flow  
+e. justify-content  
+f. align-items  
+g. align-content  
+h. gap  
+* i. row-gap  
+* ii. Column-gap  
 
 ### Flex Items Property
-These are the properties that are used over the flex items (child elements). Flex items properties are as follows-
-a. Order
-b. flex-grow
-c. flex-shrink
-d. flex-basis
-e. flex
-f. align-self
+These are the properties that are used over the flex items (child elements). Flex items properties are as follows-  
+a. Order  
+b. flex-grow  
+c. flex-shrink  
+d. flex-basis  
+e. flex  
+f. align-self  
 
 ### Display property
-It is used to define a flex container. After defining a flex container using display flex or inline-flex, it will enable a flex context for all its direct children and will allow
-users can use flex properties over the flex container and its flex items respectively.
+It is used to define a flex container. After defining a flex container using display flex or inline-flex, it will enable a flex context for all its direct children and will allow users can use flex properties over the flex container and its flex items respectively.
 
 ### Difference between flex and inline-flex
 The major difference between two is that the display:inline-flex will make the flex
@@ -897,8 +863,7 @@ There can be four values of a flex direction-
 
 ### Flex Wrap Property
 This property is used to define whether the flex items should wrap themself to fit
-the container width or not if the total required width of flex items are more than the
-flex container width.
+the container width or not if the total required width of flex items are more than the flex container width.
 
 Flex wrap can have three possible values-
 1. Nowrap
@@ -911,8 +876,7 @@ one line.
 Syntax- ```flex-flow: flex-direction flex-wrap```
 
 ### Justify Content Property
-It is used to align the flex items along with the main axis of the container within the
-flexbox layout.
+It is used to align the flex items along with the main axis of the container within the flexbox layout.
 
 It can have these possible values-
 1. Flex-start
@@ -923,7 +887,7 @@ It can have these possible values-
 6. Space-evenly
 
 ### Align Items Property
-It is used to align the flex items along with the cross axis of the container within the flexbox layout.
+It is used to align the flex items along with the cross axis of the container within the flexbox layout.  
 It can have these possible values-
 1. Stretch
 2. flex-start
@@ -936,26 +900,26 @@ This property defines the amount of space between the rows and columns of a flex
 Column-gap.
 
 Syntax
-1. gap:10px;
+1. gap:10px;  
 This is similar to row-gap:10px and column-gap:10px
 
            2. gap:10px 20px
 This is similar to row-gap:10px and column-gap:20px
 
 ### Grid
-An intersection of vertical and horizontal lines is known as a grid.
-● Major sections of a page are separated using CSS Grid layout.
+An intersection of vertical and horizontal lines is known as a grid.  
+● Major sections of a page are separated using CSS Grid layout.  
 ● A grid-based layout system with rows and columns is provided by the grid attribute. It eliminates the need for positioning and floating, making web page
-creation simple.
-● The grid layout enables us to construct grid structures represented in CSS rather than HTML.
+creation simple.  
+● The grid layout enables us to construct grid structures represented in CSS rather than HTML.  
 ● The user can align the pieces into rows and columns like a table. But using the
-CSS grid to construct a layout is simpler than using tables.
+CSS grid to construct a layout is simpler than using tables.  
 
 ### Properties associated with grid items
 ● Grid-row: defines on which row to place an item. You can also state here,
 where the item will start, and where the item will end. To place an item, you
 can either use line numbers, or use span to define how many columns the
-item will span.
+item will span.  
 
 ● Grid-column: defines on which column the item is to be placed. Like a row,
 here too, it can be stated where the item will start and end. Here again, you
@@ -984,8 +948,7 @@ Items.
 
 ### Reference 
 
-https://developer.mozilla.org/en-US/docs/Web/HTML
-https://developer.mozilla.org/en-US/docs/Web/CSS
-https://www.w3schools.com/html/
-https://www.w3schools.com/css/
-
+https://developer.mozilla.org/en-US/docs/Web/HTML  
+https://developer.mozilla.org/en-US/docs/Web/CSS  
+https://www.w3schools.com/html/  
+https://www.w3schools.com/css/  

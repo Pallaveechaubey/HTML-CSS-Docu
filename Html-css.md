@@ -642,13 +642,11 @@ Inline CSS refers to applying CSS styles directly to HTML elements using the sty
 </html>
 ```
 
-The <h1> tag has inline CSS specifying its color and font size.
-The <p> tag also has inline CSS defining its font family and size.
-The <div> tag has inline CSS defining its background color and padding.
-Inline CSS is useful when you want to apply specific styles to individual elements without creating a separate CSS file or when the styling needs to be dynamically generated. However, it's generally not recommended for large-scale projects because it can make the HTML code less readable and harder to maintain. External or internal CSS is preferred for better organization and separation of concerns.
+The ``` <h1>``` tag has inline CSS specifying its color and font size.
+The ```<p> ```tag also has inline CSS defining its font family and size.
+The ```<div> ```tag has inline CSS defining its background color and padding.
 
-
-
+### Inline CSS is useful when you want to apply specific styles to individual elements without creating a separate CSS file or when the styling needs to be dynamically generated. However, it's generally not recommended for large-scale projects because it can make the HTML code less readable and harder to maintain. External or internal CSS is preferred for better organization and separation of concerns.
 
 ## Importance of CSS Priority in the file
 The priority of CSS rules is important because it determines which styles are

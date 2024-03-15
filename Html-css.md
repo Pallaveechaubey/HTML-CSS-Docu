@@ -566,6 +566,89 @@ The `<link>` element tells the browser where to find a stylesheet using the 'rel
 
 This `<link>` element informs the browser that a stylesheet is present, using the 'rel' attribute to define its relationship, and specifying the location of the stylesheet with the 'href' attribute. To verify that the CSS is functioning correctly, you can add a rule to the 'styles.css' file.
 
+## External CSS
+External CSS (Cascading Style Sheets) is a method of styling web pages by linking an external CSS file to an HTML document. This allows for better organization, easier maintenance, and consistent styling across multiple web pages.
+* Create a CSS File:
+Start by creating a CSS file. Let's name it styles.css. This file will contain all the styling rules for your website.
+```
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Add more styling rules as needed */
+```
+* Link CSS File to HTML:
+In your HTML file, you need to link the external CSS file using the <link> tag. Place this link inside the <head> section of your HTML document.
+
+```
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Content of the webpage -->
+
+</body>
+</html>
+```
+## Inline CSS
+Inline CSS refers to applying CSS styles directly to HTML elements using the style attribute. Unlike external CSS, where styles are defined in a separate CSS file and linked to HTML, inline CSS is specified within the HTML tag itself.
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS Example</title>
+</head>
+<body>
+
+    <h1 style="color: blue; font-size: 24px;">Heading with Inline CSS</h1>
+    
+    <p style="font-family: Arial, sans-serif; font-size: 16px;">This is a paragraph with inline CSS.</p>
+
+    <div style="background-color: #f0f0f0; padding: 20px;">
+        <p>This is a paragraph inside a div with inline CSS.</p>
+    </div>
+
+</body>
+</html>
+```
+
+The <h1> tag has inline CSS specifying its color and font size.
+The <p> tag also has inline CSS defining its font family and size.
+The <div> tag has inline CSS defining its background color and padding.
+Inline CSS is useful when you want to apply specific styles to individual elements without creating a separate CSS file or when the styling needs to be dynamically generated. However, it's generally not recommended for large-scale projects because it can make the HTML code less readable and harder to maintain. External or internal CSS is preferred for better organization and separation of concerns.
+
+
+
 
 ## Importance of CSS Priority in the file
 The priority of CSS rules is important because it determines which styles are

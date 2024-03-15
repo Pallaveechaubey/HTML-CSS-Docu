@@ -536,6 +536,7 @@ Sometimes, when you're marking up things like dates, chemical formulas, or mathe
 
 
 # Cascading Style sheet
+CSS, or Cascading Style Sheets, is a style sheet language used to describe the presentation of a document written in HTML (HyperText Markup Language). It defines how HTML elements should be displayed on a webpage, including their layout, colors, fonts, spacing, and other visual aspects.
 
 There are 3 ways to connect CSS  in our document  
 * Internal CSS
